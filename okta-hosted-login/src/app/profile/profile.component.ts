@@ -14,8 +14,8 @@ import { Component, OnInit } from '@angular/core';
 import { OktaAuthService } from '@okta/okta-angular';
 
 interface Claim {
-  claim: String,
-  value: String
+  claim: String;
+  value: String;
 }
 
 @Component({

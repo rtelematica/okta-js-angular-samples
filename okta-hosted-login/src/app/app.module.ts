@@ -27,6 +27,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ProfileComponent } from './profile/profile.component';
+import {TokenComponent} from "./token/token.component";
+import {DecodetokenComponent} from "./decode-token/decodetoken.component";
 
 const appRoutes: Routes = [
   {
@@ -47,6 +49,16 @@ const appRoutes: Routes = [
     component: MessagesComponent,
     canActivate: [ OktaAuthGuard ],
   },
+  {
+    path: 'token',
+    component: TokenComponent,
+    canActivate: [ OktaAuthGuard ],
+  },
+  {
+    path: 'decode-token',
+    component: DecodetokenComponent,
+    canActivate: [ OktaAuthGuard ],
+  },
 ];
 
 @NgModule({
@@ -55,6 +67,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ProfileComponent,
     MessagesComponent,
+    TokenComponent,
+    DecodetokenComponent,
   ],
   imports: [
     BrowserModule,

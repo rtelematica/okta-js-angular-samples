@@ -1,0 +1,19 @@
+<div>
+  <a href="https://www.jsonwebtoken.io">jsonwebtoken</a>
+</div>
+<h1 class="ui header">
+  <i aria-hidden="true" class="drivers license outline icon"></i> User Tokens
+</h1>
+<div>
+  <h2>Access Token:</h2>
+  <p class="ow">{{accessToken}}</p>
+  <div>
+    <button class="ui primary button" (click)="copyAccessToken()" value="click to copy">Copy Access Token</button>
+  </div>
+  <br/>
+  <h2>ID Token:</h2>
+  <p class="ow">{{idToken}}</p>
+  <div>
+    <button class="ui primary button" (click)="copyIdToken()" value="click to copy">Copy ID Token</button>
+  </div>
+</div>

@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   }
 
   login() {
-    this.oktaAuth.loginRedirect()
+    this.oktaAuth.loginRedirect('profile');
   }
 
   async ngOnInit() {
